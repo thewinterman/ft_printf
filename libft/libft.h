@@ -6,7 +6,7 @@
 /*   By: mwinter <mwinter@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/22 21:49:29 by matwinte          #+#    #+#             */
-/*   Updated: 2022/11/20 02:00:58 by mwinter          ###   ########.fr       */
+/*   Updated: 2022/11/20 02:08:56 by mwinter          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void	ft_putnbr_fd(int n, int fd);
 /* ************************************************************************** */
 
 // checks ----------------------------------------------------------------------
+
 /*checks for an alphabetic character*/
 int		ft_isalpha(int c);
 /*checks for a digit (0 through 9).*/
@@ -47,6 +48,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 
 // convert ---------------------------------------------------------------------
+
 /*convert lowercase to uppercase*/
 int		ft_toupper(int c);
 /*convert uppercase to lowercase*/
@@ -85,10 +87,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 /*returns a copy of str while removing char in set from begging and end*/
 char	*ft_strtrim(char const *s1, char const *set);
-/*returns an arr of str obtained by splitting ’s’ using ’c’ as a delimiter.*/
-char	**ft_split(char const *s, char c);
 /*copy a string modified by fcn*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+/*returns an arr of str obtained by splitting ’s’ using ’c’ as a delimiter.*/
+char	**ft_split(char const *s, char c);
 
 // convert/modify --------------------------------------------------------------
 
@@ -137,6 +139,7 @@ typedef struct s_list
 }					t_list;
 
 // checks ----------------------------------------------------------------------
+
 /*get size of a list*/
 int		ft_lstsize(t_list *lst);
 /*get last node of a list*/
