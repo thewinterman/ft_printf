@@ -9,7 +9,9 @@ CFLAGS		= -Wall -Wextra -Werror
 INCLUDE		= -I ./
 
 FCN			=	ft_printf.c \
-
+				ft_printf_process_csdiupercent.c \
+				ft_printf_process_pxX.c \
+				ft_printf_libft.c
 
 FCN_BONUS	=
 
@@ -31,8 +33,6 @@ RM			= rm -f
 all		:	${NAME}
 
 ${NAME}	:	${OBJ}
-			$(MAKE) ./libft
-			cp libft/libft.a $(NAME)
 			ar rc ${NAME} ${OBJ}
 			ranlib ${NAME}
 
